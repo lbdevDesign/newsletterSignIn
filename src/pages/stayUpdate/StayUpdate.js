@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import IconList from "../../components/iconList/iconList";
 import NewsForm from "../../components/newsForm/newsForm";
-import signUpImg from "../../assets/illustration-sign-up-desktop.svg"
+import signUpImgDesk from "../../assets/illustration-sign-up-desktop.svg";
+import signUpImgTabMob from "../../assets/illustration-sign-up-mobile.svg";
 
 const listTextArray = [
   'Product discovery and building what matters',
@@ -15,6 +16,7 @@ function StayUpdate() {
   return (
     <div className="container">
       <section className="update">
+        <img src={signUpImgTabMob} alt="signup image" className="update__img--tabMob"/>
         <div className="update__text">
           <h1 className="update__text__title">Stay updated!</h1>
           <p className="update__text__description">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -23,7 +25,7 @@ function StayUpdate() {
           </ul>
           <NewsForm />
         </div>
-        <img src={signUpImg} alt="signup image" className="update__img"/>
+        <img src={signUpImgDesk} alt="signup image" className="update__img--desk"/>
       </section>
     </div>
   );
