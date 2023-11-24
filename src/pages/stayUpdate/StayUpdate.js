@@ -23,7 +23,7 @@ function StayUpdate() {
           </ul>
           <NewsForm />
         </div>
-        <img src={signUpImg} alt="signup image" className="updateContainer__img"/>
+        <img src={signUpImg} alt="signup image" className="update__img"/>
       </section>
     </div>
   );

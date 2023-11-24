@@ -27,9 +27,32 @@
         &__benefits {
             list-style: none;
             padding: 0px;
+            margin-bottom: 40px;
         }
     }
     &__img {
         margin: 24px 24px 24px 0;
     }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .update {
+    flex-direction: column-reverse;
+    &__img {
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+        margin: 24px 24px 0 24px;
+        border-radius: 20px;
+        object-position: 0px -120px;
+    }
+    &__text {
+        &__title {
+        margin: 24px 0 0 0;
+        }
+        &__benefits {
+            margin-bottom: 24px;
+        }
+    }
+  }
 }

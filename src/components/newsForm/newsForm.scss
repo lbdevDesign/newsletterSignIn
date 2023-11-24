@@ -1,5 +1,4 @@
 .newsForm {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     &__inputTitle {
@@ -20,5 +19,12 @@
             font-size: 16px;
             font-weight: 500;
         }
+    }
+}
+
+
+@media (max-width: $breakpoint-tablet) {
+    .newsForm {
+        margin-bottom: 24px;
     }
 }
