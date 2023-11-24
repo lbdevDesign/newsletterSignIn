@@ -1,0 +1,11 @@
+.listElement {
+    display: flex;
+    margin-top: 4px;
+    &__icon {
+        width: 24px;
+        height: auto;
+    }
+    &__text {
+        margin: 8px 0 8px 12px;
+    }
+}

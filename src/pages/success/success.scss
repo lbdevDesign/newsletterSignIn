@@ -1,0 +1,19 @@
+.success {
+    background-color: white;
+    border-radius: 24px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 44px;
+    &__img {
+        width: 56px;
+    }
+    &__title {
+        font-size: 52px;
+        margin: 32px 0 0 0;
+    }
+    &__text {
+        margin: 20px 0 24px 0;
+    }
+}
