@@ -1,5 +1,5 @@
-function CtaButton(props) {
-    return(<button className="button">{props.text}</button>)
+function CtaButton({ text, onClick, style }) {
+    return(<button className="button" onClick={onClick} style={style}>{text}</button>)
 }
 
 export default CtaButton;
