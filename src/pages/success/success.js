@@ -3,15 +3,25 @@ import { useSelector } from 'react-redux';
 
 import successIcon from '../../assets/icon-success.svg'
 
+/**
+ * Composant Success
+ * 
+ * Ce composant affiche un message de succès après que l'utilisateur s'est abonné
+ * Il utilise Redux pour accéder à l'état global et React Router pour la navigation
+ */
 function Success() {
 
+    // Récupération du dernier email de l'état Redux
     const lastEmail = useSelector(state => state.emai);
     console.log(lastEmail);
 
+    // Hook pour naviguer programmement entre les routes
     const navigate = useNavigate();
 
+    // Récupération de l'email sauvegardé dans localStorage
     let emailValue = localStorage.getItem("emailValue");
 
+    // Fonction pour gérer le clic sur le bouton, naviguer vers la page d'accueil et effacer localStorage
     const navigateToHome = () => {
         localStorage.clear();
         navigate('/');

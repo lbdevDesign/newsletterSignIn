@@ -1,19 +1,27 @@
-// Définit l'état initial pour le reducer des emails.
+// État initial du reducer
+// emails : un tableau destiné à stocker les adresses e-mail
 const initialState = {
-    emails: [], // Initialisation du tableau des emails.
+    emails: [], 
 };
 
+/**
+ * Reducer pour gérer l'état des e-mails
+ * 
+ * Ce reducer écoute les actions envoyées au store Redux et met à jour l'état en conséquence
+ * Il gère spécifiquement les actions relatives aux adresses e-mail
+ * 
+ * @param {Object} state L'état actuel du reducer. S'il n'est pas défini, l'état initial est utilisé
+ * @param {Object} action L'action envoyée au reducer. Contient un type et un payload
+ * @returns {Object} Le nouvel état après l'application de l'action
+ */
 function emailReducer(state = initialState, action) {
-    // Gère les actions en fonction de leur type.
     switch (action.type) {
         case 'ADD_EMAIL':
-            // Ajoute un nouvel email à la liste des emails.
             return {
-                ...state, // Copie l'état actuel.
-                emails: [...state.emails, action.payload], // Ajoute le nouvel email à la liste.
+                ...state, 
+                emails: [...state.emails, action.payload], 
             };
         default:
-            // Retourne l'état actuel si aucune action correspondante n'est trouvée.
             return state;
     }
 }

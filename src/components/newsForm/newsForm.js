@@ -3,26 +3,36 @@ import {useNavigate} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addEmail } from '../../redux/emailAction';
 
-
-
+/**
+ * Composant NewsForm
+ * 
+ * Ce composant est un formulaire pour s'abonner à une newsletter
+ * Il valide l'adresse email saisie, affiche des messages d'erreur si nécessaire,
+ * et envoie l'email au store Redux après validation
+ */
 function NewsForm() {
 
+    // Hooks pour dispatcher une action Redux et naviguer entre les routes
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    // État pour gérer les erreurs de validation du formulaire
     const [error, setError] = useState(null);
 
+    // Fonction pour naviguer vers la page de succès
     const navigateToSuccess = () => {
         navigate('/success');
     };
 
+    // État pour gérer les données du formulaire
     const [formData, setFormData] = useState({email: ''});
     let inputEmail = formData.email
-    console.log(inputEmail);
 
+    // Fonction de validation de l'adresse email
     function isValidEmail(inputEmail) {
         return /\S+@\S+\.\S+/.test(inputEmail);
     }
 
+    // Gestionnaire d'événement pour les changements dans l'input email
     const handleChange = (e) => {
         const value = e.target.value;
         setFormData({ ...formData, email: value });
@@ -33,6 +43,7 @@ function NewsForm() {
         }
     };
 
+    // Gestionnaire d'événement pour la soumission du formulaire
     const handleSubmit = (e) => {
 
         if (!inputEmail || !isValidEmail(inputEmail)) {

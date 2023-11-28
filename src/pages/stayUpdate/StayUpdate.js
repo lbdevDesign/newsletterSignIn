@@ -4,14 +4,22 @@ import NewsForm from "../../components/newsForm/newsForm";
 import signUpImgDesk from "../../assets/illustration-sign-up-desktop.svg";
 import signUpImgTabMob from "../../assets/illustration-sign-up-mobile.svg";
 
+// Array contenant les textes pour la liste des avantages
 const listTextArray = [
   'Product discovery and building what matters',
   'Measuring to ensure updates are a succes',
   'And much more!'
 ];
 
+// Création des éléments de liste en utilisant le composant IconList pour chaque texte
 const listComponents = listTextArray.map(listText => <li key={listText}><IconList text={listText} /></li>);
 
+/**
+ * Composant StayUpdate
+ * 
+ * Ce composant est utilisé pour afficher une section permettant aux utilisateurs de s'abonner à la newsletter
+ * Il comprend des images adaptatives, une liste des avantages et un formulaire d'inscription
+ */
 function StayUpdate() {
   return (
     <div className="container">

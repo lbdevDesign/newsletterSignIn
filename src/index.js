@@ -11,7 +11,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from '../src/redux/store';
 
-
+// Création du routeur avec react-router-dom
 const router = createHashRouter([
   {
     path: "/",
@@ -23,8 +23,12 @@ const router = createHashRouter([
   },
 ]);
 
+
+// Récupération de l'élément racine du DOM pour l'application React
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Rendu de l'application React
 root.render(
+  // Fournisseur Redux pour gérer l'état global de l'application
   <Provider store={ store }>
     <PersistGate loading={null} persistor={persistor}>
       <React.StrictMode>
