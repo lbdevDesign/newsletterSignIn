@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
-import CtaButton from "../ctaButton/ctaButton";
 import { useDispatch } from 'react-redux';
 import { addEmail } from '../../redux/emailAction';
 
@@ -60,7 +59,7 @@ function NewsForm() {
                 placeholder="example@email.com" 
                 value={formData.email}
                 onChange={handleChange}/>
-                <CtaButton text='Subscribe to monthly newsletter' type="submit"/>
+                <button className="newsForm__button" type="submit">Subscribe to monthly newsletter</button>
             </div> 
         </form>
         
