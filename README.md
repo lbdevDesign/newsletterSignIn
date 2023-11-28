@@ -1,71 +1,62 @@
-# Getting Started with Create React App
+# News Sign-In Form
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![made-with-node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) ![made-with-react](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=FFFFFF) 
 
-## Available Scripts
+##Description
 
-In the project directory, you can run:
+Ce projet est une application web React qui permet aux utilisateurs de s'inscrire pour recevoir des mises à jour par email. <br>
+Elle utilise Redux pour la récupération de la liste d'emails, React Router pour la navigation et redux-persist pour la persistance de l'état.
 
-### `yarn start`
+##Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+# Clonez le repository :
+git clone https://github.com/kospheus/newsletterSignIn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Accédez au dossier du projet :
+cd newssigninform
 
-### `yarn test`
+# Installez les dépendances :
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Ou avec yarn :
+yarn 
+```
 
-### `yarn build`
+## Démarrage du Projet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pour démarrer l'application en mode développement, exécutez :
+```bash
+# Avec npm :
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Avec yarn :
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ouvrez http://localhost:3000 pour la visualiser dans le navigateur.
 
-### `yarn eject`
+## Construction pour la Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Pour construire l'application pour la production, utilisez :
+```bash
+# Avec npm :
+npm run build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Avec yarn :
+yarn build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Le build de production sera dans le dossier build.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##Technologies Utilisées
+React<br>
+Redux<br>
+React Router<br>
+Redux Persist<br>
+Testing Library<br>
 
-## Learn More
+##Licence
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# newsletterSignIn
+Ce projet est sous licence MIT.
