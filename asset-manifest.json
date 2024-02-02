@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/newsletterSignIn/static/css/main.4f153340.css",
-    "main.js": "/newsletterSignIn/static/js/main.2c975c89.js",
-    "static/media/illustration-sign-up-mobile.svg": "/newsletterSignIn/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
-    "static/media/illustration-sign-up-desktop.svg": "/newsletterSignIn/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
-    "index.html": "/newsletterSignIn/index.html",
-    "static/media/icon-success.svg": "/newsletterSignIn/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
-    "main.4f153340.css.map": "/newsletterSignIn/static/css/main.4f153340.css.map",
-    "main.2c975c89.js.map": "/newsletterSignIn/static/js/main.2c975c89.js.map"
+    "main.css": "/newsletterSignin/static/css/main.4f153340.css",
+    "main.js": "/newsletterSignin/static/js/main.c0d65b7d.js",
+    "static/media/illustration-sign-up-mobile.svg": "/newsletterSignin/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "static/media/illustration-sign-up-desktop.svg": "/newsletterSignin/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
+    "index.html": "/newsletterSignin/index.html",
+    "static/media/icon-success.svg": "/newsletterSignin/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "main.4f153340.css.map": "/newsletterSignin/static/css/main.4f153340.css.map",
+    "main.c0d65b7d.js.map": "/newsletterSignin/static/js/main.c0d65b7d.js.map"
   },
   "entrypoints": [
     "static/css/main.4f153340.css",
-    "static/js/main.2c975c89.js"
+    "static/js/main.c0d65b7d.js"
   ]
 }
